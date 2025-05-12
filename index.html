@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style/output.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>PARALLAX WEBSITE</title>
+    <style>
+        * { 
+           
+            color: lightgray ;
+        }
+    </style>
+</head>
+<body  class=" ctr p-0 m-0 font-mono overflow-x-hidden ">
+    <div class=" childctr container flex flex-col justify-center items-center relative ">
+       <header class=" fixed top-0 left-0 right-0 flex items-center justify-between px-[10px] py-[30px] border-header z-50"> 
+          <div class="head-left flex items-center ">
+
+             <img class="h-[45px] mr-4" src="assets/img/logo.png" alt="logo">
+             <h1>PGHBRAIN <box-icon type='solid' name='sushi'></box-icon></h1>
+            
+          </div>
+
+         <ul class=" justify-between w-[30%] bg-none hidden md:flex ">
+             <li><a href="#">FRATURES</a></li>
+             <li><a href="#">PRICING</a></li>
+             <li><a href="#">HOW TO USE</a></li>
+             <li><a href="#">ROADMAP</a></li>
+             
+          </ul>
+         
+
+          <div class="head-right  items-center flex">
+             <a class="hover:text-gray-400 transition-colors hidden md:flex" href="#">NEW ACCOUNT</a>
+             <div class="button-box relative w-[65px] md:w-[100px] h-[45px] ml-9  ">
+             <button id="signinBtn" class="btn-header hidden md:flex items-center justify-center">SIGN IN</button>
+             <button id="menuBtn" class="btn-header justify-center items-center w-[60px] text-2xl flex md:hidden"><i class="bi bi-list"></i></button>
+             </div>
+         </div>
+
+        </header>
+        <div class="sidebar">
+            <div class="close-icon flex relative text-[60px] cursor-pointer "><i class="bi bi-x"></i></div>
+            <ul>
+             <li><a href="#">FRATURES</a></li>
+             <li><a href="#">PRICING</a></li>
+             <li><a href="#">HOW TO USE</a></li>
+             <li><a href="#">ROADMAP</a></li>
+            </ul>
+        </div>
+        <!-- end header section -->
+        <section class="hero" >
+            <img class="hero-blur-image " src="assets/img/hero blur img.png" alt="">
+            <img class="hero-icons-image parallax" data-speed="4" src="assets/img/hero icons img.png" alt="">
+            <img class="hero-rings-image " src="assets/img/hero rings icon.png" alt="">
+            <h1 class=" absolute top-[10%] text-[30px] md:text-[50px] max-w-[1000px]  "> Discover the Endless possibilities of AI conversation with PGHBRAIN</h1>
+             <h3 class="absolute top-[23%] text-[15px] md:text-[20px] max-w-[700px]">Unleash the power of AI with MCBRAIN. Enhance your productivity with MCBRAIN, the ultimate OpenAI-powered chat app.</h3>
+            <button >Get Started</button>
+            <div class="hero-image-box  md:h-full scale-y-50 md:scale-100 ">
+                <div class="robot-box">
+                    <div class="robot-header"></div>
+                    <img src="assets/img/robot1.png" alt="robotpic">
+                </div>
+                <div class="element1 hidden md:flex">
+                    <img src="assets/img/element1.png" alt="">
+                </div>
+                <div class="element2 hidden md:flex">
+                    <img src="assets/img/element2.png" alt="">
+                </div>
+            </div>
+                <h4 class="absolute top-[1750px] md:top-[1450px] text-2xl">Helping people create beautiful content at PGHBRAIN</h4>
+            
+            <div class="companies-list flex flex-wrap md:flex-nowrap max-w-96 md:max-w-7xl justify-between absolute bottom-[256px] w-[450px] md:w-[90%] *:flex scale-75 md:scale-100 ">
+                <div class="company ">
+                    <img src="assets/img/company1.png" alt="">
+                    <p class="font-mono">memric</p>
+                </div>
+                <div class="company">
+                    <img src="assets/img/company2.png" alt="">
+                    <p  class="font-mono">TECHKNOW</p>
+                </div>
+                <div class="company">
+                    <img src="assets/img/company3.png" alt="">
+                    <p  class="font-mono">PGHBRAIN</p>
+                </div>
+                <div class="company">
+                    <img src="assets/img/company4.png" alt="">
+                    <p  class="font-mono">QUANEX</p>
+                </div>
+                <div class="company">
+                    <img src="assets/img/company5.png" alt="">
+                    <p  class="font-mono">SYNTHET</p>
+                </div>
+
+                
+            </div>
+        </section>
+            <!-- end hero section -->
+         <div id="signinPage" class="signin-page-box ">
+                <div class="signin-page">
+                    <h1>sign in</h1> 
+                    <input type="text" placeholder= "User Name">
+                    <input type="text" placeholder="Email">
+                    <input type="text" placeholder="Password">
+                    <button  class="cursor-pointer w-[50%] h-[40px] text-[20px] font-extrabold  text-amber-50"> Sign in</button>
+                    <p class="cursor-pointer w-[50%] h-[40px] text-[20px] font-extrabold  text-amber-50">Login</p>
+                    <div id="closeIcon"><i class="bi bi-x"></i></div>
+                </div>
+            </div>
+            <!-- end sign in page -->
+             <section class="features-section">
+                <h1 class=" min-w-[300px] scale-50 md:scale-100 text-[30px] md:text-[50px]"> Chat smarter, Not Harder. with PGHBRAIN</h1>
+                <div class="features-gradient autoDisplay"></div>
+                <div class="features-card-box">
+
+                    <div class="features-card autoDisplay">
+                        <h2>Ask Anything</h2>
+                    <p>lets users quickliy find answers to their questions whithout having to search through multiple sources. </p>
+                    <div class="explore-more">
+                        <img src="assets/img/feature1.png" alt="">
+                        <a href="#"> Explore more <i class="bi bi-box-arrow-up-right"></i> </a>
+                    </div>
+                    <img src="assets/img/features back img.png" alt="">
+                    </div>
+
+
+
+                     <div class="features-card autoDisplay">
+                        <h2>Improve Everyday</h2>
+                    <p>lThe app uses natural language processing to understand user queries and provide accurate and relevant responses. </p>
+                    <div class="explore-more">
+                        <img src="assets/img/feature2.png" alt="">
+                        <a href="#"> Explore more <i class="bi bi-box-arrow-up-right"></i> </a>
+                    </div>
+                    <img src="assets/img/features back img.png" alt="">
+                    </div>
+
+                     <div class="features-card autoDisplay">
+                        <h2>Conect Everywere</h2>
+                    <p>Connect with the AI chatbot from anywhere, on any device, making it more accessible and convenient. </p>
+                    <div class="explore-more">
+                        <img src="assets/img/feature3.png" alt="">
+                        <a href="#"> Explore more <i class="bi bi-box-arrow-up-right"></i> </a>
+                    </div>
+                    <img src="assets/img/features back img.png" alt="">
+                    </div>
+
+                     <div class="features-card autoDisplay">
+                        <h2>Fast Responding</h2>
+                    <p>Lets users quickly find answers to their questions without having to search through multiple sources.. </p>
+                    <div class="explore-more">
+                        <img src="assets/img/feature4.png" alt="">
+                        <a href="#"> Explore more <i class="bi bi-box-arrow-up-right"></i> </a>
+                    </div>
+                    <img src="assets/img/features back img.png" alt="">
+                    </div>
+
+                     <div class="features-card autoDisplay">
+                        <h2>Ask Anything</h2>
+                    <p>lets users quickliy find answers to their questions whithout having to search through multiple sources. </p>
+                    <div class="explore-more">
+                        <img src="assets/img/feature1.png" alt="">
+                        <a href="#"> Explore more <i class="bi bi-box-arrow-up-right"></i> </a>
+                    </div>
+                    <img src="assets/img/features back img.png" alt="">
+                    </div>
+
+                     <div class="features-card autoDisplay">
+                        <h2>More knowledge</h2>
+                    <p>lets users quickliy find answers to their questions whithout having to search through multiple sources. </p>
+                    <div class="explore-more">
+                        <img src="assets/img/feature2.png" alt="">
+                        <a href="#"> Explore more <i class="bi bi-box-arrow-up-right"></i> </a>
+                    </div>
+                    <img src="assets/img/features back img.png" alt="">
+                    </div>
+
+
+
+                </div>
+             </section>
+             <!-- endd features section -->
+
+              <!-- start chatApp sec -->
+              <section class="chatApp-section min-w-[300px]   flex-wrap md:flex-nowrap">
+                <div class="left-container mt-[100px] md:mt-0 md:scale-100 w-full ">
+                    <h1 class="fadeInLeft"> AI Chat App for seamless collabration</h1>
+                    <p class="fadeInLeft"><img src="assets/img/Check circle.png" alt="">seamless integration</p>
+                    <h2 class="fadeInLeft">With smart automation and top-notch security, it's the perfect solution for teams looking to work smarter.</h2>
+                    <p class="fadeInLeft"><img src="assets/img/Check circle.png" alt="">Smart Automation</p>
+                     <p class="fadeInLeft"><img src="assets/img/Check circle.png" alt="">Top notch security</p>
+
+                    <div class="button-box relative w-[100px] h-[45px] ml-9 fadeInLeft ">
+                       <button id="signinBtn" class="btn-header">Try it Now</button>
+                     </div>
+
+                </div>
+
+               <div class="right-container">
+                  <h2 class="fadeInRight">With smart automation and top-notch security, it's the perfect solution for teams looking to work smarter.</h2>
+                  <img class="fadeInRight" src="assets/img/tools group.png" alt="">
+                </div>
+
+                </section>
+
+        </section>
+            <!-- generativ sec -->
+           <section class="generative-section min-w-[380px]">
+            <h1>Gernerative AI made for creators</h1>
+            <p>MCBRAIN unlocks the potential of AI-powerd Applications</p>
+
+            <div class="grid-box ">
+                <div class="grid-card grid1 autoBlur scale-y-50 md:scale-100  ">
+                    <img src="assets/img/service-1.png" alt="" class="grid1-robot-img">
+                    <div class="info scale-x-50 md:scale-100 ">
+                        <h2>Smartest AI</h2>
+                        <h4>MCBRSIN unlocks the potential of AI-powered applications</h4>
+                        <p><img src="assets/img/Check circle.png" alt=""> Photo Generating</p>
+                        <p><img src="assets/img/Check circle.png" alt=""> Photo Enhance</p>
+                        <p><img src="assets/img/Check circle.png" alt=""> Seamless Integration</p>
+                    </div>
+                </div>
+
+                <div class="grid-card grid2 autoBlur hidden md:flex">
+                    <img src="assets/img/service-2.png" alt="">
+                    <div><h2>Hey MCBBRAIN, Enhance this photo</h2></div>
+
+                    <h1>Photo Editing</h1>
+                    <p>Automatically enhance your photos using our AI app's photo editing feature. Try it now!</p>
+                </div>
+
+                <div class="grid-card grid3 autoBlur hidden md:flex">
+                    <div class="info">
+                        <h2>Video Generation</h2>
+                        <h4>The world’s most powerful AI photo and video art generation engine. What will you create?</h4>
+
+                        <div class="info-icons">
+                            <div class="icon">
+                                <i class='bx bxs-extension' ></i>
+                            </div>
+
+                            <div class="icon">
+                                <i class='bx bx-signal-5' ></i>
+                            </div>
+
+                            <div class="icon">
+                                <i class='bx bxs-videos' ></i>
+                            </div>
+
+                            <div class="icon">
+                                <i class='bx bx-wifi' ></i>
+                            </div>
+
+                            <div class="icon">
+                                <i class='bx bx-reset' ></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <img src="assets/img/service-3.png" alt="">
+                </div>
+
+                <div class="grid-card grid4 autoBlur scale-y-50 md:scale-100 ">
+                    <img src="assets/img/service-4.png" alt="" class="grid4-robot-img">
+                    <div class="info scale-x-50 md:scale-100">
+                        <h2>Smartest AI</h2>
+                        <h4>MCBRSIN unlocks the potential of AI-powered applications</h4>
+                        <p><img src="assets/img/Check circle.png" alt=""> Music Generating</p>
+                        <p><img src="assets/img/Check circle.png" alt=""> Voice Enhance</p>
+                        <p><img src="assets/img/Check circle.png" alt=""> Seamless Integration</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- pricing section -->
+
+        <section class="pricing-section md:w-5xl flex-wrap min-w-[380px]">
+            <div class="pricing-img-box">
+                <img class="parallax" data-speed="4" src="assets/img/pricing-parallax.png" alt="">
+                <img class="scale-50 md:scale-100" src="assets/img/magical-glob.png" alt="">
+            </div>
+
+            <h1 class="title">Pay once, use forever</h1>
+            
+            <div class="pricing-container  max-w-[300px] md:max-w-[10000px]  ">
+                <div class="price-box ">
+                    <h1>Basic</h1>
+                    <h2>AI chatbot, Personalized recommendations</h2>
+                    <h3>$0</h3>
+                    <button>GET STARED</button>
+
+                    <p><img src="assets/img/Check circle.png" alt=""> An AI chatbot that can underassets/img/Check circle.png
+                    <p><img src="assets/img/Check circle.png" alt=""> An AI chatbot that can underassets/img/Check circle.png
+                    <p><img src="assets/img/Check circle.png" alt=""> An AI chatbot that can understand your queries</p>
+                </div>
+
+                <div class="price-box bg-amber-700 hidden md:flex">
+                    <h1 class="">Premium</h1>
+                    <h2>Advanced AI chatbot, priority support, analytics dashboard</h2>
+                    <h3>$9.99</h3>
+                    <button>GET STARED</button>
+
+                    <p><img src="assets/img/Check circle.png" alt=""> An AI chatbot that can underassets/img/Check circle.png
+                    <p><img src="assets/img/Check circle.png" alt=""> An AI chatbot that can underassets/img/Check circle.png
+                    <p><img src="assets/img/Check circle.png" alt=""> An AI chatbot that can understand your queries</p>
+                </div>
+
+                <div class="price-box">
+                    <h1>Enterprise</h1>
+                    <h2>Custom AI chatbot, advanced analytics, dedicated account</h2>
+                    <h3>$99.99</h3>
+                    <button>GET STARED</button>
+
+                    <p><img src="assets/img/Check circle.png" alt=""> An AI chatbot that can underassets/img/Check circle.png
+                    <p><img src="assets/img/Check circle.png" alt=""> An AI chatbot that can underassets/img/Check circle.png
+                    <p><img src="assets/img/Check circle.png" alt=""> An AI chatbot that can understand your queries</p>
+                </div>
+            </div>
+            <a href="#">SEE THE FULL DETAILS</a>
+        </section>
+             <!-- roadmap sec -->
+        <seccction class="roadmap-section">
+            <h1 class="scale-50 md:scale-100">What we're working on</h1>
+
+            <div class="roadmap-cards-box *:min-w-[400px] flex flex-wrap">
+                <div class="roadmap-card autoBlur">
+                    <img src="assets/img/roadmap-1.png" alt="">
+                    <h2>Voice Recognition</h2>
+                    <p>Enable the chatbot to understand and respond to voice commands, making it easier for users to interact with the app hands-free.</p>
+                </div>
+
+                <div class="roadmap-card autoBlur" >
+                    <img src="assets/img/roadmap-2.png" alt="">
+                    <h2>Voice Recognition</h2>
+                    <p>Enable the chatbot to understand and respond to voice commands, making it easier for users to interact with the app hands-free.</p>
+                </div>
+
+                <div class="roadmap-card autoBlur">
+                    <img src="assets/img/roadmap-3.png" alt="">
+                    <h2>Voice Recognition</h2>
+                    <p>Enable the chatbot to understand and respond to voice commands, making it easier for users to interact with the app hands-free.</p>
+                </div>
+
+                <div class="roadmap-card autoBlur">
+                    <img src="assets/img/roadmap-4.png" alt="">
+                    <h2>Voice Recognition</h2>
+                    <p>Enable the chatbot to understand and respond to voice commands, making it easier for users to interact with the app hands-free.</p>
+                </div>
+            </div>
+
+          
+                    <div class="button-box relative w-[200px] h-[75px] m-24  ">
+                       <button id="signinBtn" class="btn-header text-[30px] ">OUR ROADMAP</button>
+                     </div>
+        </seccction>
+                <!-- footer sec -->
+        <footer class="flex-col sm:flex-col md:flex-row">
+            <h1> 💎Master:parsa ghorbanian <br>©️2025, Made with ❤️ by MohamamdReza br Afroozi</h1> 
+            
+           
+            <div class="box-icons">
+                <a href="https://www.linkedin.com/in/afroozidev/"><i class="bi bi-linkedin"></i></a>
+                <a href="https://github.com/mohammadrezaafroozi"><i class="bi bi-github"></i></a>
+                <a href="https://www.instagram.com/afroozi_dev/"><i class="bi bi-instagram"></i></a>
+                
+                
+               
+            </div>
+        </footer>
+
+    </div>
+    
+
+
+       <figure class="footerss">
+        <a href="https://github.com/mohammadrezaafroozi" target="_blank">
+            <i class="bi bi-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/mohammad-reza-afroozi-65886b349/" target="_blank">
+            <i class=" bi bi-linkedin"></i>
+        </a>
+        <a href="https://www.instagram.com/afroozi_dev?igsh=MWNvODk2dGwwY29o" target="_blank">
+            <i class=" bi bi-instagram"></i>
+        </a>
+        <img src="assets/img/myphoto.jpg" alt="">
+        <figcaption>Mohammad Afroozi</figcaption>
+    </figure>
+
+<script src="assets/index.js"></script>
+</body>
+
+</html>
